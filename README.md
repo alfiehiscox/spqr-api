@@ -11,16 +11,16 @@ and [gorm](https://github.com/go-gorm/gorm) to create the server.
 
 ## Usage
 
-**Rulers**
+### Rulers
 Rome had many rulers between the years of x and y, and not merely emporers. 
-Rupublican Rome (between x and y) saw the senate in control, and around 
+Republican Rome (between x and y) saw the senate in control, and around 
 them the two elected consuls of Rome, who had vitto power over descisions
 of law, war and the common people. 
 
-This endpoint sees to try and capture the popular rulers of rome that we know of, 
+This endpoint tries to capture the popular rulers of Rome that we know of, 
 and serves as a good who's who of Roman politics throughout the years. 
 
-Below give the usage for this endpoint and outlines useful filters and sorting options.
+See usage and useful filters and sorting options below:
 
 ```
 spqr-api.com/api/rulers
