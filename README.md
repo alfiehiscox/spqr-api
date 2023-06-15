@@ -2,12 +2,12 @@
 
 SQPR-API is an opensource API for querying information about the ancient Romans.
 
-The API is written in Go and available here: <LINK>
+The API is written in Go and is available here: <LINK>
 
 The project is split into two separate applications: the api and the scraper. 
-The scraper is a simple script that uses Colly to scrap popular websites for 
-information about the romans. The API uses different Go technologies such as Gin 
-and GORM to create the server. 
+The scraper is a simple script that uses [colly](https://github.com/gocolly/colly) to scrape popular websites for 
+information about the romans. The API uses different Go technologies such as [gin](https://github.com/gin-gonic/gin) 
+and [gorm](https://github.com/go-gorm/gorm) to create the server. 
 
 ## Usage
 
