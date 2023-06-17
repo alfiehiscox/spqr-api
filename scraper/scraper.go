@@ -2,6 +2,10 @@ package main
 
 import (
 	"fmt"
+	"strconv"
+	"strings"
+
+	"github.com/gocolly/colly"
 )
 
 // The main structure we want to populate
@@ -46,4 +50,79 @@ var Emperors = []Ruler{e1, e2, e3, e4, e5, e6, e7, e8, e9, e10, e11, e12, e13, e
 
 func main() {
 	fmt.Println("Running scrapper...")
+	getConsuls()
+}
+
+type ConsulYear struct {
+	Consuls []string
+	Year    int
+}
+
+// Get's consuls from https://en.wikipedia.org/wiki/List_of_Roman_consuls from 200BCE - 200CE
+func getConsuls() {
+
+	var rulers []Ruler
+
+	c := colly.NewCollector()
+
+	// I'm repeating this for now anon function for now but will put rulers as a ctx param
+	// and create a new function for the handler in the future
+
+	// Get's the table for 200BCE - 100BCE
+	c.OnHTML("#mw-content-text > div.mw-parser-output > table:nth-child(55)", func(h *colly.HTMLElement) {
+		h.ForEach("tr", func(i int, h *colly.HTMLElement) {
+			// This is concaternated string of 'td' results
+			elem := h.ChildText("td")
+
+			// Split out each element by \n
+			elems := strings.Split(elem, "\n")
+
+			if len(elems) >= 3 {
+				// Only accept years and not 'suff.'
+				if year, err := strconv.Atoi(elems[0]); err == nil {
+					consulYear := ConsulYear{elems[1:3], year}
+					twoRulers := genConsulRuler(consulYear)
+					rulers = append(rulers, twoRulers[0], twoRulers[1])
+				}
+			}
+		})
+	})
+
+	// Get's the table for 100BCE - 46BCE
+	c.OnHTML("#mw-content-text > div.mw-parser-output > table:nth-child(57)", func(h *colly.HTMLElement) {
+		h.ForEach("tr", func(i int, h *colly.HTMLElement) {
+			// This is concaternated string of 'td' results
+			elem := h.ChildText("td")
+
+			// Split out each element by \n
+			elems := strings.Split(elem, "\n")
+
+			if len(elems) >= 3 {
+				// Only accept years and not 'suff.' and stops at 46BCE
+				year, err := strconv.Atoi(elems[0])
+				if err == nil || year < 43 {
+					consulYear := ConsulYear{elems[1:3], year}
+					twoRulers := genConsulRuler(consulYear)
+					rulers = append(rulers, twoRulers[0], twoRulers[1])
+				}
+			}
+		})
+	})
+
+	c.Visit("https://en.wikipedia.org/wiki/List_of_Roman_consuls")
+
+	fmt.Println(rulers)
+}
+
+func genConsulRuler(c ConsulYear) []Ruler {
+	var rulers []Ruler
+	for _, consul := range c.Consuls {
+		office := Office{"Consul of Rome", fmt.Sprint(c.Year), fmt.Sprint(c.Year)}
+		ruler := Ruler{
+			Name:    consul,
+			Offices: []Office{office},
+		}
+		rulers = append(rulers, ruler)
+	}
+	return rulers
 }
