@@ -1,7 +1,10 @@
 package main
 
 import (
+	"encoding/json"
 	"fmt"
+	"io/ioutil"
+	"log"
 	"strconv"
 	"strings"
 
@@ -10,16 +13,16 @@ import (
 
 // The main structure we want to populate
 type Ruler struct {
-	Name    string
-	Birth   string
-	Death   string
-	Offices []Office
+	Name    string   `json:"name"`
+	Birth   string   `json:"birth"`
+	Death   string   `json:"death"`
+	Offices []Office `json:"offices"`
 }
 
 type Office struct {
-	Office string
-	Start  string
-	End    string
+	Office string `json:"office"`
+	Start  string `json:"start"`
+	End    string `json:"End"`
 }
 
 // The 20 emperors from 31 BCE to 211 CE
@@ -61,12 +64,9 @@ type ConsulYear struct {
 // Get's consuls from https://en.wikipedia.org/wiki/List_of_Roman_consuls from 200BCE - 200CE
 func getConsuls() {
 
-	var rulers []Ruler
-
 	c := colly.NewCollector()
 
-	// I'm repeating this for now anon function for now but will put rulers as a ctx param
-	// and create a new function for the handler in the future
+	rulers := []Ruler{}
 
 	// Get's the table for 200BCE - 100BCE
 	c.OnHTML("#mw-content-text > div.mw-parser-output > table:nth-child(55)", func(h *colly.HTMLElement) {
@@ -111,7 +111,9 @@ func getConsuls() {
 
 	c.Visit("https://en.wikipedia.org/wiki/List_of_Roman_consuls")
 
-	fmt.Println(rulers)
+	if err := rulersToJson(rulers, "rulers.json"); err != nil {
+		log.Fatal(err)
+	}
 }
 
 func genConsulRuler(c ConsulYear) []Ruler {
@@ -125,4 +127,19 @@ func genConsulRuler(c ConsulYear) []Ruler {
 		rulers = append(rulers, ruler)
 	}
 	return rulers
+}
+
+func rulersToJson(rulers []Ruler, fileName string) error {
+
+	file, err := json.MarshalIndent(rulers, "", " ")
+	if err != nil {
+		return err
+	}
+
+	err = ioutil.WriteFile(fileName, file, 0644)
+	if err != nil {
+		return err
+	}
+
+	return nil
 }
