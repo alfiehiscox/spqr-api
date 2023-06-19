@@ -14,8 +14,8 @@ import (
 // The main structure we want to populate
 type Ruler struct {
 	Name    string   `json:"name"`
-	Birth   string   `json:"birth"`
-	Death   string   `json:"death"`
+	Birth   string   `json:"birth,omitempty"`
+	Death   string   `json:"death,omitempty"`
 	Offices []Office `json:"offices"`
 }
 
@@ -53,7 +53,12 @@ var Emperors = []Ruler{e1, e2, e3, e4, e5, e6, e7, e8, e9, e10, e11, e12, e13, e
 
 func main() {
 	fmt.Println("Running scrapper...")
-	getConsuls()
+	consuls := getConsuls()
+	rulers := append(Emperors, consuls...)
+
+	if err := rulersToJson(rulers, "rulers.json"); err != nil {
+		log.Fatal(err)
+	}
 }
 
 type ConsulYear struct {
@@ -62,7 +67,7 @@ type ConsulYear struct {
 }
 
 // Get's consuls from https://en.wikipedia.org/wiki/List_of_Roman_consuls from 200BCE - 200CE
-func getConsuls() {
+func getConsuls() []Ruler {
 
 	c := colly.NewCollector()
 
@@ -111,9 +116,7 @@ func getConsuls() {
 
 	c.Visit("https://en.wikipedia.org/wiki/List_of_Roman_consuls")
 
-	if err := rulersToJson(rulers, "rulers.json"); err != nil {
-		log.Fatal(err)
-	}
+	return rulers
 }
 
 func genConsulRuler(c ConsulYear) []Ruler {

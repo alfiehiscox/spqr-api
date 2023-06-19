@@ -1,8 +1,246 @@
 [
  {
+  "name": "Augustus",
+  "birth": "63BCE",
+  "death": "14CE",
+  "offices": [
+   {
+    "office": "Emperor",
+    "start": "31BCE",
+    "End": "14CE"
+   }
+  ]
+ },
+ {
+  "name": "Tiberius",
+  "birth": "42BCE",
+  "death": "37CE",
+  "offices": [
+   {
+    "office": "Emperor",
+    "start": "14CE",
+    "End": "37CE"
+   }
+  ]
+ },
+ {
+  "name": "Caligula",
+  "birth": "12CE",
+  "death": "41CE",
+  "offices": [
+   {
+    "office": "Emperor",
+    "start": "37CE",
+    "End": "41CE"
+   }
+  ]
+ },
+ {
+  "name": "Claudius",
+  "birth": "10BCE",
+  "death": "54CE",
+  "offices": [
+   {
+    "office": "Emperor",
+    "start": "41CE",
+    "End": "54CE"
+   }
+  ]
+ },
+ {
+  "name": "Nero",
+  "birth": "37CE",
+  "death": "68CE",
+  "offices": [
+   {
+    "office": "Emperor",
+    "start": "54CE",
+    "End": "68CE"
+   }
+  ]
+ },
+ {
+  "name": "Otho",
+  "birth": "3BCE",
+  "death": "69CE",
+  "offices": [
+   {
+    "office": "Emperor",
+    "start": "68CE",
+    "End": "69CE"
+   }
+  ]
+ },
+ {
+  "name": "Aulus Vitellius",
+  "birth": "15BCE",
+  "death": "69CE",
+  "offices": [
+   {
+    "office": "Emperor",
+    "start": "69CE",
+    "End": "69CE"
+   }
+  ]
+ },
+ {
+  "name": "Vespasian",
+  "birth": "9CE",
+  "death": "79CE",
+  "offices": [
+   {
+    "office": "Emperor",
+    "start": "69CE",
+    "End": "79CE"
+   }
+  ]
+ },
+ {
+  "name": "Titus",
+  "birth": "39CE",
+  "death": "81CE",
+  "offices": [
+   {
+    "office": "Emperor",
+    "start": "79CE",
+    "End": "81CE"
+   }
+  ]
+ },
+ {
+  "name": "Domitian",
+  "birth": "51CE",
+  "death": "96CE",
+  "offices": [
+   {
+    "office": "Emperor",
+    "start": "81CE",
+    "End": "96CE"
+   }
+  ]
+ },
+ {
+  "name": "Nerva",
+  "birth": "30CE",
+  "death": "98CE",
+  "offices": [
+   {
+    "office": "Emperor",
+    "start": "96CE",
+    "End": "98CE"
+   }
+  ]
+ },
+ {
+  "name": "Trajan",
+  "birth": "53CE",
+  "death": "117CE",
+  "offices": [
+   {
+    "office": "Emperor",
+    "start": "98CE",
+    "End": "117CE"
+   }
+  ]
+ },
+ {
+  "name": "Hadrian",
+  "birth": "76CE",
+  "death": "138CE",
+  "offices": [
+   {
+    "office": "Emperor",
+    "start": "117CE",
+    "End": "138CE"
+   }
+  ]
+ },
+ {
+  "name": "Antoninus Pius",
+  "birth": "86CE",
+  "death": "161CE",
+  "offices": [
+   {
+    "office": "Emperor",
+    "start": "138CE",
+    "End": "161CE"
+   }
+  ]
+ },
+ {
+  "name": "Marcus Aurelius",
+  "birth": "121CE",
+  "death": "180CE",
+  "offices": [
+   {
+    "office": "Emperor",
+    "start": "161CE",
+    "End": "180CE"
+   }
+  ]
+ },
+ {
+  "name": "Lucius Verus",
+  "birth": "130CE",
+  "death": "169CE",
+  "offices": [
+   {
+    "office": "Emperor",
+    "start": "161CE",
+    "End": "169CE"
+   }
+  ]
+ },
+ {
+  "name": "Commodus",
+  "birth": "161CE",
+  "death": "192CE",
+  "offices": [
+   {
+    "office": "Emperor",
+    "start": "177CE",
+    "End": "192CE"
+   }
+  ]
+ },
+ {
+  "name": "Publius Helvius Pertinax",
+  "birth": "126CE",
+  "death": "193CE",
+  "offices": [
+   {
+    "office": "Emperor",
+    "start": "193CE",
+    "End": "193CE"
+   }
+  ]
+ },
+ {
+  "name": "Marcus Didius Severus Julianus",
+  "birth": "133CE",
+  "death": "193CE",
+  "offices": [
+   {
+    "office": "Emperor",
+    "start": "193CE",
+    "End": "193CE"
+   }
+  ]
+ },
+ {
+  "name": "Septimius Severus",
+  "birth": "145CE",
+  "death": "211CE",
+  "offices": [
+   {
+    "office": "Emperor",
+    "start": "193CE",
+    "End": "211CE"
+   }
+  ]
+ },
+ {
   "name": "P. Sulpicius Galba Maximus II",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -13,8 +251,6 @@
  },
  {
   "name": "C. Aurelius Cotta",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -25,8 +261,6 @@
  },
  {
   "name": "L. Cornelius Lentulus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -37,8 +271,6 @@
  },
  {
   "name": "P. Villius Tappulus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -49,8 +281,6 @@
  },
  {
   "name": "T. Quinctius Flamininus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -61,8 +291,6 @@
  },
  {
   "name": "Sex. Aelius Paetus Catus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -73,8 +301,6 @@
  },
  {
   "name": "C. Cornelius Cethegus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -85,8 +311,6 @@
  },
  {
   "name": "Q. Minucius Rufus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -97,8 +321,6 @@
  },
  {
   "name": "L. Furius Purpureo",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -109,8 +331,6 @@
  },
  {
   "name": "M. Claudius Marcellus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -121,8 +341,6 @@
  },
  {
   "name": "L. Valerius Flaccus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -133,8 +351,6 @@
  },
  {
   "name": "M. Porcius Cato",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -145,8 +361,6 @@
  },
  {
   "name": "P. Cornelius Scipio Africanus II",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -157,8 +371,6 @@
  },
  {
   "name": "Ti. Sempronius Longus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -169,8 +381,6 @@
  },
  {
   "name": "L. Cornelius Merula",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -181,8 +391,6 @@
  },
  {
   "name": "Q. Minucius Thermus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -193,8 +401,6 @@
  },
  {
   "name": "L. Quinctius Flamininus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -205,8 +411,6 @@
  },
  {
   "name": "Cn. Domitius Ahenobarbus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -217,8 +421,6 @@
  },
  {
   "name": "P. Cornelius Scipio Nasica",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -229,8 +431,6 @@
  },
  {
   "name": "M'. Acilius Glabrio",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -241,8 +441,6 @@
  },
  {
   "name": "L. Cornelius Scipio Asiaticus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -253,8 +451,6 @@
  },
  {
   "name": "C. Laelius",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -265,8 +461,6 @@
  },
  {
   "name": "M. Fulvius Nobilior",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -277,8 +471,6 @@
  },
  {
   "name": "Cn. Manlius Vulso",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -289,8 +481,6 @@
  },
  {
   "name": "M. Valerius Messalla",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -301,8 +491,6 @@
  },
  {
   "name": "C. Livius Salinator",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -313,8 +501,6 @@
  },
  {
   "name": "M. Aemilius Lepidus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -325,8 +511,6 @@
  },
  {
   "name": "C. Flaminius",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -337,8 +521,6 @@
  },
  {
   "name": "Sp. Postumius Albinus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -349,8 +531,6 @@
  },
  {
   "name": "Q. Marcius Philippus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -361,8 +541,6 @@
  },
  {
   "name": "Ap. Claudius Pulcher",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -373,8 +551,6 @@
  },
  {
   "name": "M. Sempronius Tuditanus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -385,8 +561,6 @@
  },
  {
   "name": "P. Claudius Pulcher",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -397,8 +571,6 @@
  },
  {
   "name": "L. Porcius Licinus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -409,8 +581,6 @@
  },
  {
   "name": "M. Claudius Marcellus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -421,8 +591,6 @@
  },
  {
   "name": "Q. Fabius Labeo",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -433,8 +601,6 @@
  },
  {
   "name": "Cn. Baebius Tamphilus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -445,8 +611,6 @@
  },
  {
   "name": "L. Aemilius Paullus (Macedonicus)",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -457,8 +621,6 @@
  },
  {
   "name": "P. Cornelius Cethegus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -469,8 +631,6 @@
  },
  {
   "name": "M. Baebius Tamphilus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -481,8 +641,6 @@
  },
  {
   "name": "A. Postumius Albinus Luscus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -493,8 +651,6 @@
  },
  {
   "name": "C. Calpurnius Piso",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -505,8 +661,6 @@
  },
  {
   "name": "Q. Fulvius Flaccus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -517,8 +671,6 @@
  },
  {
   "name": "L. Manlius Acidinus Fulvianus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -529,8 +681,6 @@
  },
  {
   "name": "M. Junius Brutus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -541,8 +691,6 @@
  },
  {
   "name": "A. Manlius Vulso",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -553,8 +701,6 @@
  },
  {
   "name": "C. Claudius Pulcher",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -565,8 +711,6 @@
  },
  {
   "name": "Ti. Sempronius Gracchus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -577,8 +721,6 @@
  },
  {
   "name": "Cn. Cornelius Scipio Hispallus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -589,8 +731,6 @@
  },
  {
   "name": "Q. Petillius Spurinus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -601,8 +741,6 @@
  },
  {
   "name": "P. Mucius Scaevola",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -613,8 +751,6 @@
  },
  {
   "name": "M. Aemilius Lepidus II",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -625,8 +761,6 @@
  },
  {
   "name": "Sp. Postumius Albinus Paullulus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -637,8 +771,6 @@
  },
  {
   "name": "Q. Mucius Scaevola",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -649,8 +781,6 @@
  },
  {
   "name": "L. Postumius Albinus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -661,8 +791,6 @@
  },
  {
   "name": "M. Popillius Laenas",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -673,8 +801,6 @@
  },
  {
   "name": "C. Popillius Laenas",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -685,8 +811,6 @@
  },
  {
   "name": "P. Aelius Ligus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -697,8 +821,6 @@
  },
  {
   "name": "P. Licinius Crassus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -709,8 +831,6 @@
  },
  {
   "name": "C. Cassius Longinus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -721,8 +841,6 @@
  },
  {
   "name": "A. Hostilius Mancinus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -733,8 +851,6 @@
  },
  {
   "name": "A. Atilius Serranus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -745,8 +861,6 @@
  },
  {
   "name": "Q. Marcius Philippus II",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -757,8 +871,6 @@
  },
  {
   "name": "Cn. Servilius Caepio",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -769,8 +881,6 @@
  },
  {
   "name": "L. Aemilius Paullus Macedonicus II",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -781,8 +891,6 @@
  },
  {
   "name": "C. Licinius Crassus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -793,8 +901,6 @@
  },
  {
   "name": "Q. Aelius Paetus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -805,8 +911,6 @@
  },
  {
   "name": "M. Junius Pennus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -817,8 +921,6 @@
  },
  {
   "name": "M. Claudius Marcellus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -829,8 +931,6 @@
  },
  {
   "name": "C. Sulpicius Galus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -841,8 +941,6 @@
  },
  {
   "name": "T. Manlius Torquatus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -853,8 +951,6 @@
  },
  {
   "name": "Cn. Octavius",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -865,8 +961,6 @@
  },
  {
   "name": "A. Manlius Torquatus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -877,8 +971,6 @@
  },
  {
   "name": "Q. Cassius Longinus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -889,8 +981,6 @@
  },
  {
   "name": "Ti. Sempronius Gracchus II",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -901,8 +991,6 @@
  },
  {
   "name": "M'. Juventius Thalna",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -913,8 +1001,6 @@
  },
  {
   "name": "P. Cornelius Scipio Nasica Corculum",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -925,8 +1011,6 @@
  },
  {
   "name": "C. Marcius Figulus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -937,8 +1021,6 @@
  },
  {
   "name": "M. Valerius Messalla",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -949,8 +1031,6 @@
  },
  {
   "name": "C. Fannius Strabo",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -961,8 +1041,6 @@
  },
  {
   "name": "L. Anicius Gallus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -973,8 +1051,6 @@
  },
  {
   "name": "M. Cornelius Cethegus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -985,8 +1061,6 @@
  },
  {
   "name": "Cn. Cornelius Dolabella",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -997,8 +1071,6 @@
  },
  {
   "name": "M. Fulvius Nobilior",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1009,8 +1081,6 @@
  },
  {
   "name": "M. Aemilius Lepidus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1021,8 +1091,6 @@
  },
  {
   "name": "C. Popillius Laenas II",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1033,8 +1101,6 @@
  },
  {
   "name": "Sex. Julius Caesar",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1045,8 +1111,6 @@
  },
  {
   "name": "L. Aurelius Orestes",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1057,8 +1121,6 @@
  },
  {
   "name": "L. Cornelius Lentulus Lupus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1069,8 +1131,6 @@
  },
  {
   "name": "C. Marcius Figulus II",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1081,8 +1141,6 @@
  },
  {
   "name": "P. Cornelius Scipio Nasica Corculum II",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1093,8 +1151,6 @@
  },
  {
   "name": "M. Claudius Marcellus II",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1105,8 +1161,6 @@
  },
  {
   "name": "Q. Opimius",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1117,8 +1171,6 @@
  },
  {
   "name": "L. Postumius Albinus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1129,8 +1181,6 @@
  },
  {
   "name": "Q. Fulvius Nobilior[78]",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1141,8 +1191,6 @@
  },
  {
   "name": "T. Annius Luscus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1153,8 +1201,6 @@
  },
  {
   "name": "M. Claudius Marcellus III",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1165,8 +1211,6 @@
  },
  {
   "name": "L. Valerius Flaccus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1177,8 +1221,6 @@
  },
  {
   "name": "L. Licinius Lucullus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1189,8 +1231,6 @@
  },
  {
   "name": "A. Postumius Albinus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1201,8 +1241,6 @@
  },
  {
   "name": "T. Quinctius Flamininus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1213,8 +1251,6 @@
  },
  {
   "name": "M'. Acilius Balbus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1225,8 +1261,6 @@
  },
  {
   "name": "L. Marcius Censorinus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1237,8 +1271,6 @@
  },
  {
   "name": "M'. Manilius",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1249,8 +1281,6 @@
  },
  {
   "name": "Sp. Postumius Albinus Magnus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1261,8 +1291,6 @@
  },
  {
   "name": "L. Calpurnius Piso Caesoninus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1273,8 +1301,6 @@
  },
  {
   "name": "P. Cornelius Scipio Aemilianus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1285,8 +1311,6 @@
  },
  {
   "name": "C. Livius Drusus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1297,8 +1321,6 @@
  },
  {
   "name": "Cn. Cornelius Lentulus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1309,8 +1331,6 @@
  },
  {
   "name": "L. Mummius Achaicus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1321,8 +1341,6 @@
  },
  {
   "name": "Q. Fabius Maximus Aemilianus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1333,8 +1351,6 @@
  },
  {
   "name": "L. Hostilius Mancinus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1345,8 +1361,6 @@
  },
  {
   "name": "Ser. Sulpicius Galba",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1357,8 +1371,6 @@
  },
  {
   "name": "L. Aurelius Cotta",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1369,8 +1381,6 @@
  },
  {
   "name": "Ap. Claudius Pulcher",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1381,8 +1391,6 @@
  },
  {
   "name": "Q. Caecilius Metellus Macedonicus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1393,8 +1401,6 @@
  },
  {
   "name": "L. Caecilius Metellus Calvus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1405,8 +1411,6 @@
  },
  {
   "name": "Q. Fabius Maximus Servilianus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1417,8 +1421,6 @@
  },
  {
   "name": "Cn. Servilius Caepio",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1429,8 +1431,6 @@
  },
  {
   "name": "Q. Pompeius",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1441,8 +1441,6 @@
  },
  {
   "name": "C. Laelius Sapiens",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1453,8 +1451,6 @@
  },
  {
   "name": "Q. Servilius Caepio",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1465,8 +1461,6 @@
  },
  {
   "name": "Cn. Calpurnius Piso",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1477,8 +1471,6 @@
  },
  {
   "name": "M. Popillius Laenas",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1489,8 +1481,6 @@
  },
  {
   "name": "P. Cornelius Scipio Nasica Serapio",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1501,8 +1491,6 @@
  },
  {
   "name": "D. Junius Brutus (Callaicus)",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1513,8 +1501,6 @@
  },
  {
   "name": "M. Aemilius Lepidus Porcina",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1525,8 +1511,6 @@
  },
  {
   "name": "C. Hostilius Mancinus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1537,8 +1521,6 @@
  },
  {
   "name": "L. Furius Philus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1549,8 +1531,6 @@
  },
  {
   "name": "Sex. Atilius Serranus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1561,8 +1541,6 @@
  },
  {
   "name": "Ser. Fulvius Flaccus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1573,8 +1551,6 @@
  },
  {
   "name": "Q. Calpurnius Piso",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1585,8 +1561,6 @@
  },
  {
   "name": "P. Cornelius Scipio Africanus Aemilianus II",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1597,8 +1571,6 @@
  },
  {
   "name": "C. Fulvius Flaccus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1609,8 +1581,6 @@
  },
  {
   "name": "P. Mucius Scaevola",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1621,8 +1591,6 @@
  },
  {
   "name": "L. Calpurnius Piso Frugi",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1633,8 +1601,6 @@
  },
  {
   "name": "P. Popillius Laenas",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1645,8 +1611,6 @@
  },
  {
   "name": "P. Rupilius",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1657,8 +1621,6 @@
  },
  {
   "name": "P. Licinius Crassus Dives Mucianus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1669,8 +1631,6 @@
  },
  {
   "name": "L. Valerius Flaccus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1681,8 +1641,6 @@
  },
  {
   "name": "L. Cornelius Lentulus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1693,8 +1651,6 @@
  },
  {
   "name": "M. Perperna",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1705,8 +1661,6 @@
  },
  {
   "name": "C. Sempronius Tuditanus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1717,8 +1671,6 @@
  },
  {
   "name": "M'. Aquillius",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1729,8 +1681,6 @@
  },
  {
   "name": "Cn. Octavius",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1741,8 +1691,6 @@
  },
  {
   "name": "T. Annius Rufus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1753,8 +1701,6 @@
  },
  {
   "name": "L. Cassius Longinus Ravilla",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1765,8 +1711,6 @@
  },
  {
   "name": "L. Cornelius Cinna",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1777,8 +1721,6 @@
  },
  {
   "name": "M. Aemilius Lepidus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1789,8 +1731,6 @@
  },
  {
   "name": "L. Aurelius Orestes",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1801,8 +1741,6 @@
  },
  {
   "name": "M. Plautius Hypsaeus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1813,8 +1751,6 @@
  },
  {
   "name": "M. Fulvius Flaccus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1825,8 +1761,6 @@
  },
  {
   "name": "C. Cassius Longinus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1837,8 +1771,6 @@
  },
  {
   "name": "C. Sextius Calvinus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1849,8 +1781,6 @@
  },
  {
   "name": "Q. Caecilius Metellus (Balearicus)",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1861,8 +1791,6 @@
  },
  {
   "name": "T. Quinctius Flamininus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1873,8 +1801,6 @@
  },
  {
   "name": "Cn. Domitius Ahenobarbus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1885,8 +1811,6 @@
  },
  {
   "name": "C. Fannius",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1897,8 +1821,6 @@
  },
  {
   "name": "L. Opimius",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1909,8 +1831,6 @@
  },
  {
   "name": "Q. Fabius Maximus (Allobrogicus)",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1921,8 +1841,6 @@
  },
  {
   "name": "P. Manilius",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1933,8 +1851,6 @@
  },
  {
   "name": "C. Papirius Carbo",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1945,8 +1861,6 @@
  },
  {
   "name": "L. Caecilius Metellus (Delmaticus)",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1957,8 +1871,6 @@
  },
  {
   "name": "L. Aurelius Cotta",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1969,8 +1881,6 @@
  },
  {
   "name": "M. Porcius Cato",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1981,8 +1891,6 @@
  },
  {
   "name": "Q. Marcius Rex",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -1993,8 +1901,6 @@
  },
  {
   "name": "L. Caecilius Metellus Diadematus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2005,8 +1911,6 @@
  },
  {
   "name": "Q. Mucius Scaevola (Augur)",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2017,8 +1921,6 @@
  },
  {
   "name": "C. Licinius Geta",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2029,8 +1931,6 @@
  },
  {
   "name": "Q. Fabius Maximus Eburnus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2041,8 +1941,6 @@
  },
  {
   "name": "M. Aemilius Scaurus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2053,8 +1951,6 @@
  },
  {
   "name": "M. Caecilius Metellus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2065,8 +1961,6 @@
  },
  {
   "name": "M'. Acilius Balbus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2077,8 +1971,6 @@
  },
  {
   "name": "C. Porcius Cato",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2089,8 +1981,6 @@
  },
  {
   "name": "C. Caecilius Metellus Caprarius",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2101,8 +1991,6 @@
  },
  {
   "name": "Cn. Papirius Carbo",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2113,8 +2001,6 @@
  },
  {
   "name": "M. Livius Drusus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2125,8 +2011,6 @@
  },
  {
   "name": "L. Calpurnius Piso Caesoninus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2137,8 +2021,6 @@
  },
  {
   "name": "P. Cornelius Scipio Nasica",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2149,8 +2031,6 @@
  },
  {
   "name": "L. Calpurnius Bestia",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2161,8 +2041,6 @@
  },
  {
   "name": "M. Minucius Rufus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2173,8 +2051,6 @@
  },
  {
   "name": "Sp. Postumius Albinus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2185,8 +2061,6 @@
  },
  {
   "name": "Q. Caecilius Metellus (Numidicus)",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2197,8 +2071,6 @@
  },
  {
   "name": "M. Junius Silanus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2209,8 +2081,6 @@
  },
  {
   "name": "Ser. Sulpicius Galba",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2221,8 +2091,6 @@
  },
  {
   "name": "Hortensius (invalidated)",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2233,8 +2101,6 @@
  },
  {
   "name": "L. Cassius Longinus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2245,8 +2111,6 @@
  },
  {
   "name": "C. Marius",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2257,8 +2121,6 @@
  },
  {
   "name": "Q. Servilius Caepio",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2269,8 +2131,6 @@
  },
  {
   "name": "C. Atilius Serranus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2281,8 +2141,6 @@
  },
  {
   "name": "P. Rutilius Rufus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2293,8 +2151,6 @@
  },
  {
   "name": "Cn. Mallius Maximus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2305,8 +2161,6 @@
  },
  {
   "name": "C. Marius II",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2317,8 +2171,6 @@
  },
  {
   "name": "C. Flavius Fimbria",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2329,8 +2181,6 @@
  },
  {
   "name": "C. Marius III",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2341,8 +2191,6 @@
  },
  {
   "name": "L. Aurelius Orestes",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2353,8 +2201,6 @@
  },
  {
   "name": "C. Marius IV",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2365,8 +2211,6 @@
  },
  {
   "name": "Q. Lutatius Catulus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2377,8 +2221,6 @@
  },
  {
   "name": "C. Marius V",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2389,8 +2231,6 @@
  },
  {
   "name": "M'. Aquillius",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2401,8 +2241,6 @@
  },
  {
   "name": "C. Marius VI",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2413,8 +2251,6 @@
  },
  {
   "name": "L. Valerius Flaccus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2425,8 +2261,6 @@
  },
  {
   "name": "M. Antonius",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2437,8 +2271,6 @@
  },
  {
   "name": "A. Postumius Albinus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2449,8 +2281,6 @@
  },
  {
   "name": "Q. Caecilius Metellus Nepos",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2461,8 +2291,6 @@
  },
  {
   "name": "T. Didius",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2473,8 +2301,6 @@
  },
  {
   "name": "Cn. Cornelius Lentulus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2485,8 +2311,6 @@
  },
  {
   "name": "P. Licinius Crassus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2497,8 +2321,6 @@
  },
  {
   "name": "Cn. Domitius Ahenobarbus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2509,8 +2331,6 @@
  },
  {
   "name": "C. Cassius Longinus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2521,8 +2341,6 @@
  },
  {
   "name": "L. Licinius Crassus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2533,8 +2351,6 @@
  },
  {
   "name": "Q. Mucius Scaevola (Pontifex)",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2545,8 +2361,6 @@
  },
  {
   "name": "C. Coelius Caldus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2557,8 +2371,6 @@
  },
  {
   "name": "L. Domitius Ahenobarbus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2569,8 +2381,6 @@
  },
  {
   "name": "C. Valerius Flaccus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2581,8 +2391,6 @@
  },
  {
   "name": "M. Herennius",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2593,8 +2401,6 @@
  },
  {
   "name": "C. Claudius Pulcher",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2605,8 +2411,6 @@
  },
  {
   "name": "M. Perperna",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2617,8 +2421,6 @@
  },
  {
   "name": "L. Marcius Philippus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2629,8 +2431,6 @@
  },
  {
   "name": "Sex. Julius Caesar",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2641,8 +2441,6 @@
  },
  {
   "name": "L. Julius Caesar",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2653,8 +2451,6 @@
  },
  {
   "name": "P. Rutilius Lupus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2665,8 +2461,6 @@
  },
  {
   "name": "Cn. Pompeius Strabo",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2677,8 +2471,6 @@
  },
  {
   "name": "L. Porcius Cato",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2689,8 +2481,6 @@
  },
  {
   "name": "L. Cornelius Sulla",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2701,8 +2491,6 @@
  },
  {
   "name": "Q. Pompeius Rufus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2713,8 +2501,6 @@
  },
  {
   "name": "Cn. Octavius",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2725,8 +2511,6 @@
  },
  {
   "name": "L. Cornelius Cinna",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2737,8 +2521,6 @@
  },
  {
   "name": "",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2749,8 +2531,6 @@
  },
  {
   "name": "L. Cornelius Merula",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2761,8 +2541,6 @@
  },
  {
   "name": "L. Cornelius Cinna II",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2773,8 +2551,6 @@
  },
  {
   "name": "C. Marius VII",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2785,8 +2561,6 @@
  },
  {
   "name": "",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2797,8 +2571,6 @@
  },
  {
   "name": "L. Valerius Flaccus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2809,8 +2581,6 @@
  },
  {
   "name": "L. Cornelius Cinna III",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2821,8 +2591,6 @@
  },
  {
   "name": "Cn. Papirius Carbo",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2833,8 +2601,6 @@
  },
  {
   "name": "Cn. Papirius Carbo II",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2845,8 +2611,6 @@
  },
  {
   "name": "L. Cornelius Cinna IV",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2857,8 +2621,6 @@
  },
  {
   "name": "L. Cornelius Scipio Asiagenes (Asiaticus)",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2869,8 +2631,6 @@
  },
  {
   "name": "C. Norbanus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2881,8 +2641,6 @@
  },
  {
   "name": "C. Marius",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2893,8 +2651,6 @@
  },
  {
   "name": "Cn. Papirius Carbo III",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2905,8 +2661,6 @@
  },
  {
   "name": "M. Tullius Decula",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2917,8 +2671,6 @@
  },
  {
   "name": "Cn. Cornelius Dolabella",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2929,8 +2681,6 @@
  },
  {
   "name": "L. Cornelius Sulla Felix II",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2941,8 +2691,6 @@
  },
  {
   "name": "Q. Caecilius Metellus Pius",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2953,8 +2701,6 @@
  },
  {
   "name": "P. Servilius Vatia (Isauricus)",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2965,8 +2711,6 @@
  },
  {
   "name": "Ap. Claudius Pulcher",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2977,8 +2721,6 @@
  },
  {
   "name": "M. Aemilius Lepidus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -2989,8 +2731,6 @@
  },
  {
   "name": "Q. Lutatius Catulus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3001,8 +2741,6 @@
  },
  {
   "name": "D. Junius Brutus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3013,8 +2751,6 @@
  },
  {
   "name": "Mam. Aemilius Lepidus Livianus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3025,8 +2761,6 @@
  },
  {
   "name": "Cn. Octavius",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3037,8 +2771,6 @@
  },
  {
   "name": "C. Scribonius Curio",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3049,8 +2781,6 @@
  },
  {
   "name": "L. Octavius",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3061,8 +2791,6 @@
  },
  {
   "name": "C. Aurelius Cotta",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3073,8 +2801,6 @@
  },
  {
   "name": "L. Licinius Lucullus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3085,8 +2811,6 @@
  },
  {
   "name": "M. Aurelius Cotta",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3097,8 +2821,6 @@
  },
  {
   "name": "M. Terentius Varro Lucullus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3109,8 +2831,6 @@
  },
  {
   "name": "C. Cassius Longinus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3121,8 +2841,6 @@
  },
  {
   "name": "L. Gellius",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3133,8 +2851,6 @@
  },
  {
   "name": "Cn. Cornelius Lentulus Clodianus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3145,8 +2861,6 @@
  },
  {
   "name": "P. Cornelius Lentulus Sura",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3157,8 +2871,6 @@
  },
  {
   "name": "Cn. Aufidius Orestes",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3169,8 +2881,6 @@
  },
  {
   "name": "Cn. Pompeius Magnus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3181,8 +2891,6 @@
  },
  {
   "name": "M. Licinius Crassus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3193,8 +2901,6 @@
  },
  {
   "name": "Q. Hortensius Hortalus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3205,8 +2911,6 @@
  },
  {
   "name": "Q. Caecilius Metellus (Creticus)",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3217,8 +2921,6 @@
  },
  {
   "name": "L. Caecilius Metellus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3229,8 +2931,6 @@
  },
  {
   "name": "Q. Marcius Rex",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3241,8 +2941,6 @@
  },
  {
   "name": "C. Calpurnius Piso",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3253,8 +2951,6 @@
  },
  {
   "name": "M'. Acilius Glabrio",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3265,8 +2961,6 @@
  },
  {
   "name": "M'. Aemilius Lepidus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3277,8 +2971,6 @@
  },
  {
   "name": "L. Volcacius Tullus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3289,8 +2981,6 @@
  },
  {
   "name": "P. Cornelius Sulla (invalidated)",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3301,8 +2991,6 @@
  },
  {
   "name": "P. Autronius Paetus (invalidated)",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3313,8 +3001,6 @@
  },
  {
   "name": "L. Aurelius Cotta",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3325,8 +3011,6 @@
  },
  {
   "name": "L. Manlius Torquatus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3337,8 +3021,6 @@
  },
  {
   "name": "L. Julius Caesar",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3349,8 +3031,6 @@
  },
  {
   "name": "(?) Minucius Thermus[80]",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3361,8 +3041,6 @@
  },
  {
   "name": "M. Tullius Cicero",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3373,8 +3051,6 @@
  },
  {
   "name": "C. Antonius Hybrida",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3385,8 +3061,6 @@
  },
  {
   "name": "D. Junius Silanus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3397,8 +3071,6 @@
  },
  {
   "name": "L. Licinius Murena",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3409,8 +3081,6 @@
  },
  {
   "name": "M. Pupius Piso Frugi Calpurnianus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3421,8 +3091,6 @@
  },
  {
   "name": "M. Valerius Messalla Niger",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3433,8 +3101,6 @@
  },
  {
   "name": "L. Afranius",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3445,8 +3111,6 @@
  },
  {
   "name": "Q. Caecilius Metellus Celer",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3457,8 +3121,6 @@
  },
  {
   "name": "C. Julius Caesar",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3469,8 +3131,6 @@
  },
  {
   "name": "M. Calpurnius Bibulus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3481,8 +3141,6 @@
  },
  {
   "name": "L. Calpurnius Piso Caesoninus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3493,8 +3151,6 @@
  },
  {
   "name": "A. Gabinius",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3505,8 +3161,6 @@
  },
  {
   "name": "P. Cornelius Lentulus Spinther",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3517,8 +3171,6 @@
  },
  {
   "name": "Q. Caecilius Metellus Nepos",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3529,8 +3181,6 @@
  },
  {
   "name": "Cn. Cornelius Lentulus Marcellinus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3541,8 +3191,6 @@
  },
  {
   "name": "L. Marcius Philippus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3553,8 +3201,6 @@
  },
  {
   "name": "Cn. Pompeius Magnus II",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3565,8 +3211,6 @@
  },
  {
   "name": "M. Licinius Crassus II",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3577,8 +3221,6 @@
  },
  {
   "name": "L. Domitius Ahenobarbus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3589,8 +3231,6 @@
  },
  {
   "name": "Ap. Claudius Pulcher",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3601,8 +3241,6 @@
  },
  {
   "name": "Cn. Domitius Calvinus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3613,8 +3251,6 @@
  },
  {
   "name": "M. Valerius Messalla Rufus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3625,8 +3261,6 @@
  },
  {
   "name": "Cn. Pompeius Magnus III",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3637,8 +3271,6 @@
  },
  {
   "name": "Q. Caecilius Metellus Pius Scipio (from 1 September)",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3649,8 +3281,6 @@
  },
  {
   "name": "Ser. Sulpicius Rufus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3661,8 +3291,6 @@
  },
  {
   "name": "M. Claudius Marcellus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3673,8 +3301,6 @@
  },
  {
   "name": "L. Aemilius Paullus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3685,8 +3311,6 @@
  },
  {
   "name": "C. Claudius Marcellus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3697,8 +3321,6 @@
  },
  {
   "name": "C. Claudius Marcellus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3709,8 +3331,6 @@
  },
  {
   "name": "L. Cornelius Lentulus Crus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3721,8 +3341,6 @@
  },
  {
   "name": "C. Julius Caesar II",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3733,8 +3351,6 @@
  },
  {
   "name": "P. Servilius Isauricus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3745,8 +3361,6 @@
  },
  {
   "name": "Q. Fufius Calenus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3757,8 +3371,6 @@
  },
  {
   "name": "P. Vatinius",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3769,8 +3381,6 @@
  },
  {
   "name": "C. Julius Caesar III",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3781,8 +3391,6 @@
  },
  {
   "name": "M. Aemilius Lepidus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3793,8 +3401,6 @@
  },
  {
   "name": "C. Julius Caesar IV",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3805,8 +3411,6 @@
  },
  {
   "name": "sine collega",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3817,8 +3421,6 @@
  },
  {
   "name": "Q. Fabius Maximus (from 1 October)",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3829,8 +3431,6 @@
  },
  {
   "name": "C. Trebonius (from 1 October)",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3841,8 +3441,6 @@
  },
  {
   "name": "C. Julius Caesar V",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3853,8 +3451,6 @@
  },
  {
   "name": "M. Antonius",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3865,8 +3461,6 @@
  },
  {
   "name": "C. Vibius Pansa Caetronianus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3877,8 +3471,6 @@
  },
  {
   "name": "A. Hirtius",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3889,8 +3481,6 @@
  },
  {
   "name": "C. Julius Caesar (Octavianus)",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3901,8 +3491,6 @@
  },
  {
   "name": "Q. Pedius",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3913,8 +3501,6 @@
  },
  {
   "name": "C. Carrinas",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3925,8 +3511,6 @@
  },
  {
   "name": "P. Ventidius",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3937,8 +3521,6 @@
  },
  {
   "name": "M. Aemilius Lepidus II",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3949,8 +3531,6 @@
  },
  {
   "name": "L. Munatius Plancus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3961,8 +3541,6 @@
  },
  {
   "name": "L. Antonius Pietas",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3973,8 +3551,6 @@
  },
  {
   "name": "P. Servilius Isauricus II",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3985,8 +3561,6 @@
  },
  {
   "name": "Cn. Domitius Calvinus II",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -3997,8 +3571,6 @@
  },
  {
   "name": "C. Asinius Pollio",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4009,8 +3581,6 @@
  },
  {
   "name": "L. Cornelius Balbus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4021,8 +3591,6 @@
  },
  {
   "name": "P. Canidius Crassus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4033,8 +3601,6 @@
  },
  {
   "name": "L. Marcius Censorinus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4045,8 +3611,6 @@
  },
  {
   "name": "C. Calvisius Sabinus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4057,8 +3621,6 @@
  },
  {
   "name": "C. Cocceius Balbus (after 2 October)",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4069,8 +3631,6 @@
  },
  {
   "name": "P. Alfenus Varus (after 2 October)",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4081,8 +3641,6 @@
  },
  {
   "name": "Ap. Claudius Pulcher",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4093,8 +3651,6 @@
  },
  {
   "name": "C. Norbanus Flaccus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4105,8 +3661,6 @@
  },
  {
   "name": "L. Cornelius Lentulus (from 1 July)",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4117,8 +3671,6 @@
  },
  {
   "name": "L. Marcius Philippus (from 1 September)",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4129,8 +3681,6 @@
  },
  {
   "name": "M. (Vipsanius) Agrippa",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4141,8 +3691,6 @@
  },
  {
   "name": "L. Caninius Gallus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4153,8 +3701,6 @@
  },
  {
   "name": "",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4165,8 +3711,6 @@
  },
  {
   "name": "T. Statilius Taurus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4177,8 +3721,6 @@
  },
  {
   "name": "L. Gellius Poplicola",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4189,8 +3731,6 @@
  },
  {
   "name": "M. Cocceius Nerva",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4201,8 +3741,6 @@
  },
  {
   "name": "L. Nonius Asprenas (from 1 September)",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4213,8 +3751,6 @@
  },
  {
   "name": "Q. Marcius Rufus[85] (from 1 July)",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4225,8 +3761,6 @@
  },
  {
   "name": "L. Cornificius",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4237,8 +3771,6 @@
  },
  {
   "name": "Sex. Pompeius",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4249,8 +3781,6 @@
  },
  {
   "name": "P. Cornelius Dolabella (from 1 September)",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4261,8 +3791,6 @@
  },
  {
   "name": "T. Peducaeus (from 1 July)",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4273,8 +3801,6 @@
  },
  {
   "name": "M. Antonius II (1 January only)",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4285,8 +3811,6 @@
  },
  {
   "name": "L. Scribonius Libo",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4297,8 +3821,6 @@
  },
  {
   "name": "Paullus Aemilius Lepidus (from 1 July)",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4309,8 +3831,6 @@
  },
  {
   "name": "C. Memmius (from 1 July)",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4321,8 +3841,6 @@
  },
  {
   "name": "",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4333,8 +3851,6 @@
  },
  {
   "name": "M. Herennius Picens (from September or November)",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4345,8 +3861,6 @@
  },
  {
   "name": "Imp. Caesar (Octavianus) II (1 January only)",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4357,8 +3871,6 @@
  },
  {
   "name": "L. Volcacius Tullus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4369,8 +3881,6 @@
  },
  {
   "name": "L. Flavius (1 May – before October)",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4381,8 +3891,6 @@
  },
  {
   "name": "C. Fonteius Capito (1 May – before October)",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4393,8 +3901,6 @@
  },
  {
   "name": "Cn. Domitius Ahenobarbus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4405,8 +3911,6 @@
  },
  {
   "name": "C. Sosius",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4417,8 +3921,6 @@
  },
  {
   "name": "L. Cornelius (Balbus? Cinna?)[87]",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4429,8 +3931,6 @@
  },
  {
   "name": "M. Valerius Messalla",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4441,8 +3941,6 @@
  },
  {
   "name": "M. Antonius III (in the east)",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4453,8 +3951,6 @@
  },
  {
   "name": "Imp. Caesar III",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4465,8 +3961,6 @@
  },
  {
   "name": "Imp. Caesar IV",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4477,8 +3971,6 @@
  },
  {
   "name": "M. Licinius Crassus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4489,8 +3981,6 @@
  },
  {
   "name": "",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4501,8 +3991,6 @@
  },
  {
   "name": "C. Antistius Vetus (from 1 July)",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4513,8 +4001,6 @@
  },
  {
   "name": "",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4525,8 +4011,6 @@
  },
  {
   "name": "M. Tullius Cicero (from 1 September)",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4537,8 +4021,6 @@
  },
  {
   "name": "",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4549,8 +4031,6 @@
  },
  {
   "name": "L. Saenius",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4561,8 +4041,6 @@
  },
  {
   "name": "Imp. Caesar V",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4573,8 +4051,6 @@
  },
  {
   "name": "Sex. Appuleius",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4585,8 +4061,6 @@
  },
  {
   "name": "",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4597,8 +4071,6 @@
  },
  {
   "name": "Potitus Valerius Messalla",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4609,8 +4081,6 @@
  },
  {
   "name": "Imp. Caesar VI",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4621,8 +4091,6 @@
  },
  {
   "name": "M. Agrippa II",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4633,8 +4101,6 @@
  },
  {
   "name": "Imp. Caesar Augustus VII",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4645,8 +4111,6 @@
  },
  {
   "name": "M. Agrippa III",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4657,8 +4121,6 @@
  },
  {
   "name": "Imp. Caesar Augustus VIII",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4669,8 +4131,6 @@
  },
  {
   "name": "T. Statilius Taurus II",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4681,8 +4141,6 @@
  },
  {
   "name": "Imp. Caesar Augustus IX",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4693,8 +4151,6 @@
  },
  {
   "name": "M. Junius Silanus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4705,8 +4161,6 @@
  },
  {
   "name": "Imp. Caesar Augustus X",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4717,8 +4171,6 @@
  },
  {
   "name": "C. Norbanus Flaccus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4729,8 +4181,6 @@
  },
  {
   "name": "Imp. Caesar Augustus XI",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4741,8 +4191,6 @@
  },
  {
   "name": "A. Terentius Varro Murena (abdicated)[89]",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4753,8 +4201,6 @@
  },
  {
   "name": "L. Sestius Albanianus Quirinalis (from 1 July)[90]",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4765,8 +4211,6 @@
  },
  {
   "name": "Cn. Calpurnius Piso",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4777,8 +4221,6 @@
  },
  {
   "name": "M. Claudius Marcellus Aeserninus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4789,8 +4231,6 @@
  },
  {
   "name": "L. Arruntius",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4801,8 +4241,6 @@
  },
  {
   "name": "M. Lollius",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4813,8 +4251,6 @@
  },
  {
   "name": "Q. Aemilius Lepidus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4825,8 +4261,6 @@
  },
  {
   "name": "M. Appuleius",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4837,8 +4271,6 @@
  },
  {
   "name": "P. Silius Nerva",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4849,8 +4281,6 @@
  },
  {
   "name": "C. Sentius Saturninus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4861,8 +4291,6 @@
  },
  {
   "name": "Q. Lucretius Vespillo (after 1 August)[91]",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4873,8 +4301,6 @@
  },
  {
   "name": "P. Cornelius Lentulus Marcellinus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4885,8 +4311,6 @@
  },
  {
   "name": "Cn. Cornelius Lentulus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4897,8 +4321,6 @@
  },
  {
   "name": "C. Furnius",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4909,8 +4331,6 @@
  },
  {
   "name": "C. Junius Silanus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4921,8 +4341,6 @@
  },
  {
   "name": "L. Domitius Ahenobarbus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4933,8 +4351,6 @@
  },
  {
   "name": "P. Cornelius Scipio",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4945,8 +4361,6 @@
  },
  {
   "name": "",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4957,8 +4371,6 @@
  },
  {
   "name": "L. Tarius Rufus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4969,8 +4381,6 @@
  },
  {
   "name": "M. Livius Drusus Libo",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4981,8 +4391,6 @@
  },
  {
   "name": "L. Calpurnius Piso",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -4993,8 +4401,6 @@
  },
  {
   "name": "M. Licinius Crassus Frugi",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -5005,8 +4411,6 @@
  },
  {
   "name": "Cn. Cornelius Lentulus (Augur)",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -5017,8 +4421,6 @@
  },
  {
   "name": "Ti. Claudius Nero",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -5029,8 +4431,6 @@
  },
  {
   "name": "P. Quinctilius Varus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -5041,8 +4441,6 @@
  },
  {
   "name": "M. Valerius Messalla Appianus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -5053,8 +4451,6 @@
  },
  {
   "name": "P. Sulpicius Quirinius",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -5065,8 +4461,6 @@
  },
  {
   "name": "C. Caninius Rebilus (after 29 August)",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -5077,8 +4471,6 @@
  },
  {
   "name": "L. Volusius Saturninus (after 29 August)",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -5089,8 +4481,6 @@
  },
  {
   "name": "Q. Aelius Tubero",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -5101,8 +4491,6 @@
  },
  {
   "name": "Paullus Fabius Maximus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -5113,8 +4501,6 @@
  },
  {
   "name": "Africanus Fabius Maximus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -5125,8 +4511,6 @@
  },
  {
   "name": "Iullus Antonius",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -5137,8 +4521,6 @@
  },
  {
   "name": "Nero Claudius Drusus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -5149,8 +4531,6 @@
  },
  {
   "name": "T. Quinctius Crispinus Sulpicianus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -5161,8 +4541,6 @@
  },
  {
   "name": "C. Marcius Censorinus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -5173,8 +4551,6 @@
  },
  {
   "name": "C. Asinius Gallus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -5185,8 +4561,6 @@
  },
  {
   "name": "Ti. Claudius Nero II",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -5197,8 +4571,6 @@
  },
  {
   "name": "Cn. Calpurnius Piso",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -5209,8 +4581,6 @@
  },
  {
   "name": "D. Laelius Balbus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -5221,8 +4591,6 @@
  },
  {
   "name": "C. Antistius Vetus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -5233,8 +4601,6 @@
  },
  {
   "name": "Imp. Caesar Augustus XII",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -5245,8 +4611,6 @@
  },
  {
   "name": "L. Cornelius Sulla",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -5257,8 +4621,6 @@
  },
  {
   "name": "Q. Haterius (after 11 April)",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -5269,8 +4631,6 @@
  },
  {
   "name": "L. Vinicius (after 11 April)",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -5281,8 +4641,6 @@
  },
  {
   "name": "",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -5293,8 +4651,6 @@
  },
  {
   "name": "C. Sulpicius Galba (by 13 August)",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -5305,8 +4661,6 @@
  },
  {
   "name": "C. Calvisius Sabinus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -5317,8 +4671,6 @@
  },
  {
   "name": "L. Passienus Rufus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -5329,8 +4681,6 @@
  },
  {
   "name": "C. Caelius",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -5341,8 +4691,6 @@
  },
  {
   "name": "Galus Sulpicius (after 1 July)[94]",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -5353,8 +4701,6 @@
  },
  {
   "name": "L. Cornelius Lentulus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -5365,8 +4711,6 @@
  },
  {
   "name": "M. Valerius Messalla Messallinus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -5377,8 +4721,6 @@
  },
  {
   "name": "Imp. Caesar Augustus XIII",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -5389,8 +4731,6 @@
  },
  {
   "name": "M. Plautius Silvanus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -5401,8 +4741,6 @@
  },
  {
   "name": "C. Fufius Geminus (by 18 September)",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -5413,8 +4751,6 @@
  },
  {
   "name": "L. Caninius Gallus (by 1 August)",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -5425,8 +4761,6 @@
  },
  {
   "name": "Cossus Cornelius Lentulus (Gaetulicus)",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -5437,8 +4771,6 @@
  },
  {
   "name": "L. Calpurnius Piso (Augur)",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -5449,8 +4781,6 @@
  },
  {
   "name": "A. Plautius",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
@@ -5461,8 +4791,6 @@
  },
  {
   "name": "A. Caecina Severus",
-  "birth": "",
-  "death": "",
   "offices": [
    {
     "office": "Consul of Rome",
