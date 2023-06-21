@@ -8,32 +8,27 @@ import (
 	"github.com/gocolly/colly"
 )
 
-// Ruler represents some kind of ruling person in Ancient Rome. Birth and Death are strings are
-// given when known and applicable
+// Ruler represents some kind of ruling person in Ancient Rome. The inteval the ruler lived
+// is given in an ISO 8601 date range. Mostly only the year is given.
 type Ruler struct {
 	Name    string
-	Birth   string
-	Death   string
+	Lived   string
 	Offices []Office
 }
 
-// Office represents a single role a Ruler has had over a time period.
+// Office represents a single role a Ruler has had over a time period. The inteval that the
+// Ruler held the Office is given in ISO 8601 date range.
 type Office struct {
 	Office string
-	Start  string
-	End    string
+	Held   string
 }
 
-// Converts Ruler into string the form "name, birth, death, (office, start, end), (office, start, end)".
+// Converts Ruler into string the form "name, birth/death, (office, start/end), (office, start/end)".
 func (r Ruler) toString() string {
 	s := r.Name
 
-	if r.Birth != "" {
-		s = s + ", " + r.Birth
-	}
-
-	if r.Death != "" {
-		s = s + ", " + r.Death
+	if r.Lived != "" {
+		s = s + ", " + r.Lived
 	}
 
 	for _, o := range r.Offices {
@@ -43,9 +38,9 @@ func (r Ruler) toString() string {
 	return s
 }
 
-// Converts Office into string of the form "office, start, end"
+// Converts Office into string of the form "office, start, end".
 func (o Office) toString() string {
-	return o.Office + ", " + o.Start + ", " + o.End
+	return o.Office + ", " + o.Held
 }
 
 // ConsulYear represents the Consuls that were present in a given year.
@@ -55,26 +50,26 @@ type ConsulYear struct {
 }
 
 var (
-	e1  Ruler = Ruler{"Augustus", "63BCE", "14CE", []Office{{"Emperor", "31BCE", "14CE"}}}
-	e2  Ruler = Ruler{"Tiberius", "42BCE", "37CE", []Office{{"Emperor", "14CE", "37CE"}}}
-	e3  Ruler = Ruler{"Caligula", "12CE", "41CE", []Office{{"Emperor", "37CE", "41CE"}}}
-	e4  Ruler = Ruler{"Claudius", "10BCE", "54CE", []Office{{"Emperor", "41CE", "54CE"}}}
-	e5  Ruler = Ruler{"Nero", "37CE", "68CE", []Office{{"Emperor", "54CE", "68CE"}}}
-	e6  Ruler = Ruler{"Otho", "3BCE", "69CE", []Office{{"Emperor", "68CE", "69CE"}}}
-	e7  Ruler = Ruler{"Aulus Vitellius", "15BCE", "69CE", []Office{{"Emperor", "69CE", "69CE"}}}
-	e8  Ruler = Ruler{"Vespasian", "9CE", "79CE", []Office{{"Emperor", "69CE", "79CE"}}}
-	e9  Ruler = Ruler{"Titus", "39CE", "81CE", []Office{{"Emperor", "79CE", "81CE"}}}
-	e10 Ruler = Ruler{"Domitian", "51CE", "96CE", []Office{{"Emperor", "81CE", "96CE"}}}
-	e11 Ruler = Ruler{"Nerva", "30CE", "98CE", []Office{{"Emperor", "96CE", "98CE"}}}
-	e12 Ruler = Ruler{"Trajan", "53CE", "117CE", []Office{{"Emperor", "98CE", "117CE"}}}
-	e13 Ruler = Ruler{"Hadrian", "76CE", "138CE", []Office{{"Emperor", "117CE", "138CE"}}}
-	e14 Ruler = Ruler{"Antoninus Pius", "86CE", "161CE", []Office{{"Emperor", "138CE", "161CE"}}}
-	e15 Ruler = Ruler{"Marcus Aurelius", "121CE", "180CE", []Office{{"Emperor", "161CE", "180CE"}}}
-	e16 Ruler = Ruler{"Lucius Verus", "130CE", "169CE", []Office{{"Emperor", "161CE", "169CE"}}}
-	e17 Ruler = Ruler{"Commodus", "161CE", "192CE", []Office{{"Emperor", "177CE", "192CE"}}}
-	e18 Ruler = Ruler{"Publius Helvius Pertinax", "126CE", "193CE", []Office{{"Emperor", "193CE", "193CE"}}}
-	e19 Ruler = Ruler{"Marcus Didius Severus Julianus", "133CE", "193CE", []Office{{"Emperor", "193CE", "193CE"}}}
-	e20 Ruler = Ruler{"Septimius Severus", "145CE", "211CE", []Office{{"Emperor", "193CE", "211CE"}}}
+	e1  Ruler = Ruler{"Augustus", "-0064/0014", []Office{{"Emperor", "-0032/0014"}}}
+	e2  Ruler = Ruler{"Tiberius", "-0042/0037", []Office{{"Emperor", "0014/0037"}}}
+	e3  Ruler = Ruler{"Caligula", "0012/0041", []Office{{"Emperor", "0037/0041"}}}
+	e4  Ruler = Ruler{"Claudius", "-0011/0054", []Office{{"Emperor", "0041/0054"}}}
+	e5  Ruler = Ruler{"Nero", "0037/0068", []Office{{"Emperor", "0054/0068"}}}
+	e6  Ruler = Ruler{"Otho", "003B/0069", []Office{{"Emperor", "0068/0069"}}}
+	e7  Ruler = Ruler{"Aulus Vitellius", "-0016/0069", []Office{{"Emperor", "0069/0069"}}}
+	e8  Ruler = Ruler{"Vespasian", "0009/0079", []Office{{"Emperor", "0069/0079"}}}
+	e9  Ruler = Ruler{"Titus", "0039/0081", []Office{{"Emperor", "0079/0081"}}}
+	e10 Ruler = Ruler{"Domitian", "0051/0096", []Office{{"Emperor", "0081/0096"}}}
+	e11 Ruler = Ruler{"Nerva", "0030/0098", []Office{{"Emperor", "0096/0098"}}}
+	e12 Ruler = Ruler{"Trajan", "0053/0117", []Office{{"Emperor", "0098/0117"}}}
+	e13 Ruler = Ruler{"Hadrian", "0076/0138", []Office{{"Emperor", "0117/0138"}}}
+	e14 Ruler = Ruler{"Antoninus Pius", "0086/0161", []Office{{"Emperor", "0138/0161"}}}
+	e15 Ruler = Ruler{"Marcus Aurelius", "0121/0180", []Office{{"Emperor", "0161/0180"}}}
+	e16 Ruler = Ruler{"Lucius Verus", "0130/0169", []Office{{"Emperor", "0161/0169"}}}
+	e17 Ruler = Ruler{"Commodus", "0161/0192", []Office{{"Emperor", "0177/0192"}}}
+	e18 Ruler = Ruler{"Publius Helvius Pertinax", "0126/0193", []Office{{"Emperor", "0193/0193"}}}
+	e19 Ruler = Ruler{"Marcus Didius Severus Julianus", "0133/0193", []Office{{"Emperor", "0193/0193"}}}
+	e20 Ruler = Ruler{"Septimius Severus", "0145/0211", []Office{{"Emperor", "0193/0211"}}}
 )
 
 // Emperors is a list of the 20 emperors from 31 BCE to 211 CE.
