@@ -1,31 +1,59 @@
-package main
+package scraper
 
 import (
-	"encoding/json"
 	"fmt"
-	"io/ioutil"
-	"log"
 	"strconv"
 	"strings"
 
 	"github.com/gocolly/colly"
 )
 
-// The main structure we want to populate
+// Ruler represents some kind of ruling person in Ancient Rome. Birth and Death are strings are
+// given when known and applicable
 type Ruler struct {
-	Name    string   `json:"name"`
-	Birth   string   `json:"birth,omitempty"`
-	Death   string   `json:"death,omitempty"`
-	Offices []Office `json:"offices"`
+	Name    string
+	Birth   string
+	Death   string
+	Offices []Office
 }
 
+// Office represents a single role a Ruler has had over a time period.
 type Office struct {
-	Office string `json:"office"`
-	Start  string `json:"start"`
-	End    string `json:"End"`
+	Office string
+	Start  string
+	End    string
 }
 
-// The 20 emperors from 31 BCE to 211 CE
+// Converts Ruler into string the form "name, birth, death, (office, start, end), (office, start, end)".
+func (r Ruler) toString() string {
+	s := r.Name
+
+	if r.Birth != "" {
+		s = s + ", " + r.Birth
+	}
+
+	if r.Death != "" {
+		s = s + ", " + r.Death
+	}
+
+	for _, o := range r.Offices {
+		s = s + ", (" + o.toString() + ")"
+	}
+
+	return s
+}
+
+// Converts Office into string of the form "office, start, end"
+func (o Office) toString() string {
+	return o.Office + ", " + o.Start + ", " + o.End
+}
+
+// ConsulYear represents the Consuls that were present in a given year.
+type ConsulYear struct {
+	Consuls []string
+	Year    int
+}
+
 var (
 	e1  Ruler = Ruler{"Augustus", "63BCE", "14CE", []Office{{"Emperor", "31BCE", "14CE"}}}
 	e2  Ruler = Ruler{"Tiberius", "42BCE", "37CE", []Office{{"Emperor", "14CE", "37CE"}}}
@@ -49,25 +77,12 @@ var (
 	e20 Ruler = Ruler{"Septimius Severus", "145CE", "211CE", []Office{{"Emperor", "193CE", "211CE"}}}
 )
 
-var Emperors = []Ruler{e1, e2, e3, e4, e5, e6, e7, e8, e9, e10, e11, e12, e13, e14, e15, e16, e17, e18, e19, e20}
+// Emperors is a list of the 20 emperors from 31 BCE to 211 CE.
+var Emperors []Ruler = []Ruler{e1, e2, e3, e4, e5, e6, e7, e8, e9, e10, e11, e12, e13, e14, e15, e16, e17, e18, e19, e20}
 
-func main() {
-	fmt.Println("Running scrapper...")
-	consuls := getConsuls()
-	rulers := append(Emperors, consuls...)
-
-	if err := rulersToJson(rulers, "rulers.json"); err != nil {
-		log.Fatal(err)
-	}
-}
-
-type ConsulYear struct {
-	Consuls []string
-	Year    int
-}
-
-// Get's consuls from https://en.wikipedia.org/wiki/List_of_Roman_consuls from 200BCE - 200CE
-func getConsuls() []Ruler {
+// GetConsuls uses Colly to scrap a list of Consuls from
+// https://en.wikipedia.org/wiki/List_of_Roman_consuls from 200BCE - 43CE.
+func GetConsuls() []Ruler {
 
 	c := colly.NewCollector()
 
@@ -93,7 +108,7 @@ func getConsuls() []Ruler {
 		})
 	})
 
-	// Get's the table for 100BCE - 46BCE
+	// Get's the table for 100BCE - 43BCE
 	c.OnHTML("#mw-content-text > div.mw-parser-output > table:nth-child(57)", func(h *colly.HTMLElement) {
 		h.ForEach("tr", func(i int, h *colly.HTMLElement) {
 			// This is concaternated string of 'td' results
@@ -130,19 +145,4 @@ func genConsulRuler(c ConsulYear) []Ruler {
 		rulers = append(rulers, ruler)
 	}
 	return rulers
-}
-
-func rulersToJson(rulers []Ruler, fileName string) error {
-
-	file, err := json.MarshalIndent(rulers, "", " ")
-	if err != nil {
-		return err
-	}
-
-	err = ioutil.WriteFile(fileName, file, 0644)
-	if err != nil {
-		return err
-	}
-
-	return nil
 }
