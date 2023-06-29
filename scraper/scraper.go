@@ -94,11 +94,11 @@ func GetConsuls() []Ruler {
 
 			if len(elems) >= 3 {
 				// Only accept years and not 'suff.'
-				if year, err := strconv.Atoi(elems[0]); err == nil {
-					consulYear := ConsulYear{elems[1:3], year}
-					twoRulers := genConsulRuler(consulYear)
-					rulers = append(rulers, twoRulers[0], twoRulers[1])
-				}
+				// if year, err := strconv.Atoi(elems[0]); err == nil {
+				// consulYear := ConsulYear{elems[1:3], year}
+				// twoRulers := genConsulRuler(consulYear)
+				// rulers = append(rulers, twoRulers[0], twoRulers[1])
+				// }
 			}
 		})
 	})
@@ -116,9 +116,9 @@ func GetConsuls() []Ruler {
 				// Only accept years and not 'suff.' and stops at 46BCE
 				year, err := strconv.Atoi(elems[0])
 				if err == nil || year < 43 {
-					consulYear := ConsulYear{elems[1:3], year}
-					twoRulers := genConsulRuler(consulYear)
-					rulers = append(rulers, twoRulers[0], twoRulers[1])
+					// consulYear := ConsulYear{elems[1:3], year}
+					// twoRulers := genConsulRuler(consulYear)
+					// rulers = append(rulers, twoRulers[0], twoRulers[1])
 				}
 			}
 		})
@@ -129,15 +129,36 @@ func GetConsuls() []Ruler {
 	return rulers
 }
 
-func genConsulRuler(c ConsulYear) []Ruler {
-	var rulers []Ruler
-	for _, consul := range c.Consuls {
-		office := Office{"Consul of Rome", fmt.Sprint(c.Year), fmt.Sprint(c.Year)}
-		ruler := Ruler{
-			Name:    consul,
-			Offices: []Office{office},
-		}
-		rulers = append(rulers, ruler)
+// func genConsulRuler(c ConsulYear) []Ruler {
+// 	var rulers []Ruler
+// 	for _, consul := range c.Consuls {
+// 		office := Office{"Consul of Rome", fmt.Sprint(c.Year), strconv.(c.Year)}
+// 		ruler := Ruler{
+// 			Name:    consul,
+// 			Offices: []Office{office},
+// 		}
+// 		rulers = append(rulers, ruler)
+// 	}
+// 	return rulers
+// }
+
+/*
+TODO:
+GetConsulLinks visits https://en.wikipedia.org/wiki/List_of_Roman_consuls and
+returns a list of consuls and their links to be consumed in TUI.
+*/
+func GetConsulLinks() []Link {
+	return []Link{
+		{"Test", "http://www.testlink1.com"},
+		{"Test2", "http://www.testlink2.com"},
 	}
-	return rulers
+}
+
+/*
+TODO:
+Given the link, and assuming it's a wikipedia link, get the opening paragraph
+of the text and return it to the caller
+*/
+func GetConsulIntroText(link string) (string, error) {
+	return fmt.Sprintf("This is a text intro for Link %v", link), nil
 }
