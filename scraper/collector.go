@@ -25,6 +25,7 @@ type Model struct {
 	selected string
 
 	info string
+	w, h int
 
 	lPos  int
 	links []Link
@@ -57,6 +58,9 @@ func (m Model) Init() tea.Cmd {
 
 func (m Model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 	switch msg := msg.(type) {
+	case tea.WindowSizeMsg:
+		m.w = msg.Width
+		m.h = msg.Height
 	case tea.KeyMsg:
 		switch msg.String() {
 		case "q", "ctrl+c":
@@ -121,6 +125,10 @@ func (m Model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 }
 
 func (m Model) View() string {
+	if m.w == 0 {
+		return "Loading..."
+	}
+
 	cursor := "|"
 	s := "Move the cursor along the text\n\n"
 

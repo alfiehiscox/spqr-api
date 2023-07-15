@@ -1,6 +1,7 @@
 package scraper
 
 import (
+	"errors"
 	"fmt"
 	"strconv"
 	"strings"
@@ -94,11 +95,11 @@ func GetConsuls() []Ruler {
 
 			if len(elems) >= 3 {
 				// Only accept years and not 'suff.'
-				// if year, err := strconv.Atoi(elems[0]); err == nil {
-				// consulYear := ConsulYear{elems[1:3], year}
-				// twoRulers := genConsulRuler(consulYear)
-				// rulers = append(rulers, twoRulers[0], twoRulers[1])
-				// }
+				if year, err := strconv.Atoi(elems[0]); err == nil {
+					consulYear := ConsulYear{elems[1:3], year}
+					twoRulers := genConsulRuler(consulYear)
+					rulers = append(rulers, twoRulers[0], twoRulers[1])
+				}
 			}
 		})
 	})
@@ -116,9 +117,9 @@ func GetConsuls() []Ruler {
 				// Only accept years and not 'suff.' and stops at 46BCE
 				year, err := strconv.Atoi(elems[0])
 				if err == nil || year < 43 {
-					// consulYear := ConsulYear{elems[1:3], year}
-					// twoRulers := genConsulRuler(consulYear)
-					// rulers = append(rulers, twoRulers[0], twoRulers[1])
+					consulYear := ConsulYear{elems[1:3], year}
+					twoRulers := genConsulRuler(consulYear)
+					rulers = append(rulers, twoRulers[0], twoRulers[1])
 				}
 			}
 		})
@@ -129,36 +130,109 @@ func GetConsuls() []Ruler {
 	return rulers
 }
 
-// func genConsulRuler(c ConsulYear) []Ruler {
-// 	var rulers []Ruler
-// 	for _, consul := range c.Consuls {
-// 		office := Office{"Consul of Rome", fmt.Sprint(c.Year), strconv.(c.Year)}
-// 		ruler := Ruler{
-// 			Name:    consul,
-// 			Offices: []Office{office},
-// 		}
-// 		rulers = append(rulers, ruler)
-// 	}
-// 	return rulers
-// }
+func genConsulRuler(c ConsulYear) []Ruler {
+	var rulers []Ruler
+	for _, consul := range c.Consuls {
+		office := Office{"Consul of Rome", fmt.Sprint(c.Year)}
+		ruler := Ruler{
+			Name:    consul,
+			Offices: []Office{office},
+		}
+		rulers = append(rulers, ruler)
+	}
+	return rulers
+}
 
 /*
-TODO:
 GetConsulLinks visits https://en.wikipedia.org/wiki/List_of_Roman_consuls and
 returns a list of consuls and their links to be consumed in TUI.
 */
 func GetConsulLinks() []Link {
-	return []Link{
-		{"Test", "http://www.testlink1.com"},
-		{"Test2", "http://www.testlink2.com"},
-	}
+
+	base := "https://en.wikipedia.org"
+	var ls []Link
+	c := colly.NewCollector()
+
+	c.OnHTML("#mw-content-text > div.mw-parser-output > table:nth-child(55)", func(h *colly.HTMLElement) {
+		h.ForEach("tr a", func(i int, h *colly.HTMLElement) {
+
+			// Check for dead links that don't link to anything
+			link := base + h.Attr("href")
+			if strings.Contains(link, "redlink") {
+				link = "No Link"
+			}
+
+			ls = append(ls, Link{
+				Name: h.Text,
+				Link: link,
+			})
+		})
+	})
+
+	c.OnHTML("#mw-content-text > div.mw-parser-output > table:nth-child(57)", func(h *colly.HTMLElement) {
+		var year int
+		h.ForEach("tr", func(i int, h *colly.HTMLElement) {
+			cyear := h.ChildText("td:first-child")
+			if cyear != "suff." && cyear != "" {
+				y, err := strconv.Atoi(strings.Split(cyear, "[")[0])
+				year = y
+				if err != nil {
+					fmt.Println("Could not parse year: ", year)
+					return
+				}
+			}
+			// Only accept up to -43
+			if year > 43 {
+				h.ForEach("a", func(i int, h *colly.HTMLElement) {
+					if strings.Contains(h.Text, "[") {
+						return
+					}
+
+					link := base + h.Attr("href")
+					if strings.Contains(link, "redlink") {
+						link = "No Link"
+					}
+
+					ls = append(ls, Link{
+						Name: h.Text,
+						Link: link,
+					})
+				})
+			}
+		})
+	})
+
+	c.Visit("https://en.wikipedia.org/wiki/List_of_Roman_consuls")
+
+	return ls
 }
 
 /*
-TODO:
 Given the link, and assuming it's a wikipedia link, get the opening paragraph
 of the text and return it to the caller
 */
 func GetConsulIntroText(link string) (string, error) {
-	return fmt.Sprintf("This is a text intro for Link %v", link), nil
+
+	// var text string
+	c := colly.NewCollector()
+
+	if link == "" || link == "No Link" {
+		return "", errors.New("no link provided")
+	}
+
+	var text string
+
+	c.OnHTML("#mw-content-text > div.mw-parser-output", func(h *colly.HTMLElement) {
+		// We get the first 500 chars of the text
+		fullText := h.ChildText("p")
+		if len(fullText) > 500 {
+			text = fullText[0:500]
+		} else {
+			text = fullText[0:]
+		}
+	})
+
+	c.Visit(link)
+
+	return text, nil
 }
