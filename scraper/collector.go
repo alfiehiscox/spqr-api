@@ -6,6 +6,7 @@ import (
 	"fmt"
 	"os"
 	"strconv"
+	"strings"
 
 	tea "github.com/charmbracelet/bubbletea"
 	"github.com/muesli/reflow/wordwrap"
@@ -122,7 +123,7 @@ func (m Model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 				}
 			} else {
 				if m.text == "no intro" {
-					SaveToFile(m.lPos, m.name, "")
+					SaveToFile(m.lPos, m.name, ",")
 					m.selected = ""
 					m.sPos = 0
 					m.ePos = 0
@@ -201,7 +202,8 @@ type wikiErrorMsg struct {
 func (w wikiErrorMsg) Error() string { return w.error.Error() }
 
 func SaveToFile(pos int, name string, introText string) {
-	data := []byte(fmt.Sprint(pos) + "," + name + "," + introText + "\n")
+	cleaned := strings.ReplaceAll(introText, "\"", "'")
+	data := []byte(fmt.Sprint(pos) + ",\"" + name + "\",\"" + cleaned + "\"\n")
 
 	f, err := os.OpenFile(file, os.O_APPEND|os.O_WRONLY|os.O_CREATE, 0600)
 	if err != nil {
