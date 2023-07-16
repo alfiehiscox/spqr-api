@@ -123,7 +123,7 @@ func (m Model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 				}
 			} else {
 				if m.text == "no intro" {
-					SaveToFile(m.lPos, m.name, ",")
+					SaveToFile(m.lPos, m.name, "")
 					m.selected = ""
 					m.sPos = 0
 					m.ePos = 0
