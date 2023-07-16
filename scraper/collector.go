@@ -55,7 +55,7 @@ func NewModel() *Model {
 
 		info: "",
 
-		lPos:  0,
+		lPos:  GetCurrentLinkPos(),
 		links: GetConsulLinks(),
 	}
 }
@@ -106,6 +106,9 @@ func (m Model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 			if m.selected != "" {
 				m.info = ""
 				if m.lPos < len(m.links)-1 {
+					// Save the value to a file
+					SaveToFile(m.lPos, m.name, m.selected)
+
 					m.selected = ""
 					m.sPos = 0
 					m.ePos = 0
@@ -113,14 +116,20 @@ func (m Model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 
 					m.lPos++
 
-					// Save the value to a file
-					SaveToFile(m.lPos, m.name, m.selected)
-
 					return m, NewCmd(m.links[m.lPos])
 				} else {
 					m.info = "No more links..."
 				}
 			} else {
+				if m.text == "no intro" {
+					SaveToFile(m.lPos, m.name, "")
+					m.selected = ""
+					m.sPos = 0
+					m.ePos = 0
+					m.vMod = false
+					m.lPos++
+					return m, NewCmd(m.links[m.lPos])
+				}
 				m.info = "You have not selected any text for this link...?"
 			}
 
@@ -192,9 +201,15 @@ type wikiErrorMsg struct {
 func (w wikiErrorMsg) Error() string { return w.error.Error() }
 
 func SaveToFile(pos int, name string, introText string) {
-	data := []byte(fmt.Sprint(pos) + "," + name + "," + introText)
-	err := os.WriteFile(file, data, 0644)
+	data := []byte(fmt.Sprint(pos) + "," + name + "," + introText + "\n")
+
+	f, err := os.OpenFile(file, os.O_APPEND|os.O_WRONLY|os.O_CREATE, 0600)
 	if err != nil {
+		panic(err)
+	}
+	defer f.Close()
+
+	if _, err = f.Write(data); err != nil {
 		panic(err)
 	}
 }
@@ -221,11 +236,11 @@ func GetCurrentLinkPos() int {
 		panic(err)
 	}
 
-	lastId := dat[len(dat)][0]
+	lastId := dat[len(dat)-1][0]
 	id, err := strconv.Atoi(lastId)
 	if err != nil {
 		panic(err)
 	}
 
-	return id
+	return id + 1
 }
