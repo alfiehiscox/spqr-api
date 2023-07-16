@@ -9,7 +9,7 @@ import (
 )
 
 func main() {
-	p := tea.NewProgram(scraper.NewModel(), tea.WithAltScreen())
+	p := tea.NewProgram(scraper.NewModel())
 	if _, err := p.Run(); err != nil {
 		fmt.Println("Oops something went wrong")
 		os.Exit(1)

@@ -1,9 +1,14 @@
 package scraper
 
 import (
+	"encoding/csv"
+	"errors"
 	"fmt"
+	"os"
+	"strconv"
 
 	tea "github.com/charmbracelet/bubbletea"
+	"github.com/muesli/reflow/wordwrap"
 )
 
 /*
@@ -17,7 +22,10 @@ This TUI app allows you to highlight text and save it into a csv file (for the m
 The text should be from the opening paragraph of wikipedia.
 */
 
+var file string = "data/intro.csv"
+
 type Model struct {
+	name     string
 	text     string
 	sPos     int
 	ePos     int
@@ -66,7 +74,7 @@ func (m Model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 		case "q", "ctrl+c":
 			return m, tea.Quit
 		case "p":
-			m.selected = m.text[m.sPos:m.ePos]
+			m.selected = m.selected + m.text[m.sPos:m.ePos]
 		case "right", "l":
 			if !m.vMod {
 				if m.sPos < len(m.text) {
@@ -93,7 +101,6 @@ func (m Model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 			m.vMod = true
 		case "esc":
 			m.vMod = false
-			m.selected = ""
 			m.ePos = m.sPos
 		case "enter":
 			if m.selected != "" {
@@ -105,6 +112,10 @@ func (m Model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 					m.vMod = false
 
 					m.lPos++
+
+					// Save the value to a file
+					SaveToFile(m.lPos, m.name, m.selected)
+
 					return m, NewCmd(m.links[m.lPos])
 				} else {
 					m.info = "No more links..."
@@ -115,11 +126,13 @@ func (m Model) Update(msg tea.Msg) (tea.Model, tea.Cmd) {
 
 		}
 	case wikiIntroMsg:
-		m.text = string(msg)
+		m.name = msg.name
+		m.text = msg.introText
 		return m, nil
 	case wikiErrorMsg:
-		fmt.Println("error: ", msg)
-		return nil, tea.Quit
+		m.name = msg.name
+		m.text = "no intro"
+		return m, nil
 	}
 	return m, nil
 }
@@ -131,6 +144,8 @@ func (m Model) View() string {
 
 	cursor := "|"
 	s := "Move the cursor along the text\n\n"
+
+	s += "Name: " + m.name + "\n\n"
 
 	if m.sPos == m.ePos {
 		b, a := m.text[:m.sPos], m.text[m.sPos:]
@@ -151,20 +166,66 @@ func (m Model) View() string {
 	}
 
 	s += "\n\nPress q to quite.\n"
-	return s
+	return wordwrap.String(s, m.w)
 }
 
 func NewCmd(l Link) tea.Cmd {
 	return func() tea.Msg {
 		s, err := GetConsulIntroText(l.Link)
 		if err != nil {
-			return wikiErrorMsg{err}
+			return wikiErrorMsg{err, l.Name}
 		}
-		return wikiIntroMsg(s)
+		return wikiIntroMsg{s, l.Name}
 	}
 }
 
-type wikiIntroMsg string
-type wikiErrorMsg struct{ error }
+type wikiIntroMsg struct {
+	introText string
+	name      string
+}
+
+type wikiErrorMsg struct {
+	error
+	name string
+}
 
 func (w wikiErrorMsg) Error() string { return w.error.Error() }
+
+func SaveToFile(pos int, name string, introText string) {
+	data := []byte(fmt.Sprint(pos) + "," + name + "," + introText)
+	err := os.WriteFile(file, data, 0644)
+	if err != nil {
+		panic(err)
+	}
+}
+
+func GetCurrentLinkPos() int {
+	// Check if file exists
+	if _, err := os.Stat(file); err != nil {
+		if errors.Is(err, os.ErrNotExist) {
+			return 0
+		} else {
+			panic(err)
+		}
+	}
+
+	f, err := os.Open(file)
+	if err != nil {
+		panic(err)
+	}
+	defer f.Close()
+
+	w := csv.NewReader(f)
+	dat, err := w.ReadAll()
+	if err != nil {
+		panic(err)
+	}
+
+	lastId := dat[len(dat)][0]
+	id, err := strconv.Atoi(lastId)
+	if err != nil {
+		panic(err)
+	}
+
+	return id
+}
